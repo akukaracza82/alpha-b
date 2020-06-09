@@ -1,1 +1,1 @@
-1. The complete Ruby on Rails course
+1. The complete Ruby on Rails course.
