@@ -10,9 +10,13 @@
   </head>
 
   <body>
-    <% flash.each do |name, msg| %>
-    <%= msg %>
-    <% end %>
+    <%= link_to "HOME", root_path %> |
+    <%= link_to 'About page', about_path %> |
+    <%= link_to 'Articles listing', articles_path %>
+
+
+    <%=  render 'layouts/messages' %>
+
     <%= yield %>
   </body>
 </html>

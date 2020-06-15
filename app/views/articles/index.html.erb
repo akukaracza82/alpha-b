@@ -1,5 +1,10 @@
-<h1>Articles listing page</h1>
-
+<H1>Articles listing page"</H1>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
 
 <table>
   <thead>
@@ -15,8 +20,16 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.description %></td>
-      <td>Placeholder</td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <td><%= link_to 'Delete', article_path(article), method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
   </tbody>
 </table>
+
+<p></p>
+<p></p>
+<p></p>
+<%= link_to 'New article', new_article_path %>  |
+<%= link_to 'Return to articles listing', articles_path %>
