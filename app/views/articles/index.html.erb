@@ -11,9 +11,9 @@
           <div class="card-body">
             <h5 class="card-title"><%= link_to article.title, article_path(article), class: "text-success" %></h5>
             <p class="card-text"><%= article.description %></p>
-            <%= link_to "View", article_path(article), class: "btn btn-outline-success" %>
-            <%= link_to "Edit", edit_article_path(article), class: "btn btn-outline-info" %>
-            <%= link_to "Delete", article_path(article), class: "btn btn-outline-danger", method: :delete %>
+            <%= link_to "Przeczytaj", article_path(article), class: "btn btn-outline-success" %>
+            <%= link_to "Uaktualnij", edit_article_path(article), class: "btn btn-outline-info" %>
+            <%= link_to "Skasuj", article_path(article), class: "btn btn-outline-danger", method: :delete %>
           </div>
           <div class="card-footer text-muted">
             <small>
